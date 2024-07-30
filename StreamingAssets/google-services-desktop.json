@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "468533862393",
+    "project_id": "inteligen-chessroll",
+    "storage_bucket": "inteligen-chessroll.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468533862393:android:dc766812a1e9d0e6ade728",
+        "android_client_info": {
+          "package_name": "com.inteligen.chessblitz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "468533862393-0mdfnckfjq5l97bg8hjhri8j14h4pd03.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.inteligen.chessblitz",
+            "certificate_hash": "e58ae1a3fbe5a48ca61ab9d0dea7d558aa2eda50"
+          }
+        },
+        {
+          "client_id": "468533862393-3g5ollehgakejr67irkmol5bjlon27fn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.inteligen.chessblitz",
+            "certificate_hash": "1cda69cfa70f52451dad9444103927446d01db21"
+          }
+        },
+        {
+          "client_id": "468533862393-6tmf8h7avuho225v71k3jilcuog4l2ev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl7ymdrHKzR3KTL9vTlldBGIfsuEBQmLI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "468533862393-6tmf8h7avuho225v71k3jilcuog4l2ev.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-5808698660345241~1655178664"
+    }
+  ],
+  "configuration_version": "1"
+}
