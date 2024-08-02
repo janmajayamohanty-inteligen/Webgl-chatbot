@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Inteligen Bot</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-  </head>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="oauth.js"></script>
+</head>
   <body>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
@@ -98,15 +100,19 @@
         canvas.style.height = "600px";
       }
 
-      loadingBar.style.display = "block";
+        loadingBar.style.display = "block";
+
+
 
       var script = document.createElement("script");
       script.src = loaderUrl;
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
-              }).then((unityInstance) => {
-                loadingBar.style.display = "none";
+              }).then((instance) => {
+                  loadingBar.style.display = "none";
+                  unityInstance = instance; // Store the Unity instance in a variable
+                  window.unityInstance = instance; // Ensure it's available globally
                 fullscreenButton.onclick = () => {
                   unityInstance.SetFullscreen(1);
                 };
