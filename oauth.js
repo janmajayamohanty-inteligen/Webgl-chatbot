@@ -9,7 +9,7 @@ function startGoogleSignIn(callbackFunction) {
 
     let params = {
         "client_id": "698111135571-om761856rjgck5toudgqj1gjqqs6sdoo.apps.googleusercontent.com",
-        "redirect_uri": "http://localhost:52679", // Ensure this matches your app's URL
+        "redirect_uri": "https://inteligen-chatbot.web.app", // Ensure this matches your app's URL
         "response_type": "token",
         "scope": "https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email",
         "include_granted_scopes": 'true',
